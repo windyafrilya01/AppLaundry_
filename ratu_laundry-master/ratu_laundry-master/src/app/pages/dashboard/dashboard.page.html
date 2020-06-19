@@ -1,0 +1,74 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="person" slot="start"></ion-icon>
+          <ion-label>Profile</ion-label>
+        </ion-item>
+        <ion-item (click)="logout()">
+          <ion-icon name="log-in-outline" slot="start"></ion-icon>
+          <ion-label>Logout</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding" color="primary">
+      <img src="../../assets/logo.png" />
+
+      <h1 class="text">Hai, {{data.fullName}}!</h1>
+
+      <h2 class="text">Services</h2>
+
+      <ion-grid>
+        <ion-row class="center">
+          <ion-col size="4" (click)="goDetails('Komplit')">
+            <ion-card class="card leftCard">
+              <img src="../../assets/baju.svg" />
+
+              <ion-card-header>
+                <ion-card-subtitle class="center">
+                  Komplit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col size="4" (click)="goDetails('Cuci')">
+            <ion-card class="card leftCard">
+              <img class="image" src="../../assets/mesin.svg" />
+
+              <ion-card-header>
+                <ion-card-subtitle class="center">Cuci</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col size="4" (click)="goDetails('Setrika')">
+            <ion-card class="card leftCard">
+              <img src="../../assets/setrika.svg" />
+
+              <ion-card-header>
+                <ion-card-subtitle class="center">Setrika</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </div>
+</ion-app>

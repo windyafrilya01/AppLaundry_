@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <!-- <ion-icon name="arrow-back" (click)="back()"></ion-icon> -->
+    </ion-buttons>
+    <ion-title>orderPage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="container" color="primary">
+  <ion-grid>
+    <ion-row class="list" *ngFor="let data of jenisPakaian; let i = index">
+      <ion-col class="nama">
+        <img class="image" [src]="data.src" />
+        <ion-label>{{data.nama}}</ion-label>
+      </ion-col>
+      <ion-col class="contents">
+        <ion-icon name="add-circle-outline" (click)="add(i)"></ion-icon>
+        <ion-label class="jumlah">{{data.jumlah}} KG</ion-label>
+        <ion-icon name="remove-circle-outline" (click)="minus(i)"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="btn-holder">
+    <div>
+      <ion-row>
+        <ion-col>
+          <ion-label>Harga Total</ion-label>
+        </ion-col>
+        <ion-col class="contents">
+          <ion-label>Rp. {{harga}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button
+            size="large"
+            expand="block"
+            color="dark"
+            (click)="goToPayment()"
+          >
+            Submit
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>

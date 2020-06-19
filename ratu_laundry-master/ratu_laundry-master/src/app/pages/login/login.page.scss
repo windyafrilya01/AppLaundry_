@@ -1,0 +1,39 @@
+.flex {
+    display: flex;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .formCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  a {
+    color: #fff;
+  }
+  ion-item {
+    --background: #3880ff;
+    --color: #fff;
+  }
+  ion-button {
+    --background: #062f77;
+  }
+  

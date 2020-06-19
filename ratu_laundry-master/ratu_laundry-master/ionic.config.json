@@ -1,0 +1,8 @@
+{
+  "name": "LaundryQueen",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

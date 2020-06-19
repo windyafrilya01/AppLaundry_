@@ -1,0 +1,26 @@
+.text {
+  // margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+.card {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.image {
+  width: 10000rem;
+  height: auto;
+}
+.leftCard {
+  margin: auto;
+}
+.center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+ion-card {
+  height: 100%;
+  width: 87%;
+}

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <!-- <ion-icon name="arrow-back" (click)="back()"></ion-icon> -->
+    </ion-buttons>
+    <ion-title>paymentPage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+  <div class="body">
+    <h1>Total Harga Pesanan</h1>
+    <h2>Rp. {{harga}}</h2>
+    <ion-label position="floating">Nominal Uang</ion-label>
+    <ion-input
+      [(ngModel)]="money"
+      type="number"
+      placeholder="Rp. 123456"
+    ></ion-input>
+  </div>
+  <ion-grid class="btn-holder">
+    <div>
+      <ion-row>
+        <ion-col>
+          <ion-label>Kembalian</ion-label>
+        </ion-col>
+        <ion-col class="contents">
+          <ion-label>Rp. {{money-harga}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button
+            [disabled]="harga>money"
+            size="large"
+            expand="block"
+            color="dark"
+            (click)="presentAlert()"
+          >
+            Submit
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>

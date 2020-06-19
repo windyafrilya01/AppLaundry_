@@ -1,0 +1,16 @@
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.colorPrimary {
+  background-color: transparent;
+}
+.row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.item-complex .item-content,
+.item {
+  background-color: #ffc0cb;
+}

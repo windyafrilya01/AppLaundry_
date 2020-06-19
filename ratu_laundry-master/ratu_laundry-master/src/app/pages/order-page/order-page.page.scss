@@ -1,0 +1,47 @@
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.colorPrimary {
+  background-color: transparent;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container .btn-holder {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.bottom {
+  width: auto;
+  position: fixed;
+  bottom: 0;
+}
+
+.list {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.jumlah {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.image {
+  width: 5rem;
+  height: auto;
+}
+
+.nama {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
